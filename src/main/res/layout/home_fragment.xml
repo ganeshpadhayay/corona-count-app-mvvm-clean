@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="horizontal">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWorldCoronaCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/world_data"
+                android:textColor="@color/color_black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/lytMainContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/lytTotalActiveCases1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/total_active_cases"
+                        android:textColor="@color/color_active_cases"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalActiveCases1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_active_cases"
+                        android:textStyle="normal"
+                        tools:text="23234455" />
+
+                    <TextView
+                        android:id="@+id/tvActiveCasesToday1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_active_cases"
+                        android:textStyle="italic"
+                        tools:text="(+2323)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytTotalRecovered1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toRightOf="@+id/lytTotalActiveCases"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/total_recovered_cases"
+                        android:textColor="@color/color_recovered_cases"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalRecoveredCases1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_recovered_cases"
+                        android:textStyle="normal"
+                        tools:text="1234" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytTotalDeaths1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/total_death_cases"
+                        android:textColor="@color/color_deaths_cases"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalDeceasedCases1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_deaths_cases"
+                        android:textStyle="normal"
+                        tools:text="145" />
+
+                    <TextView
+                        android:id="@+id/tvDeceasedCasesToday1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_deaths_cases"
+                        android:textStyle="italic"
+                        tools:text="(+14)" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvIndiaCoronaCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="@string/india_data"
+                android:textColor="@color/color_black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/lytMainContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/lytTotalActiveCases2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/total_active_cases"
+                        android:textColor="@color/color_active_cases"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalActiveCases2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_active_cases"
+                        android:textStyle="italic"
+                        tools:text="23234455" />
+
+                    <TextView
+                        android:id="@+id/tvActiveCasesToday2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_active_cases"
+                        android:textStyle="normal"
+                        tools:text="(+34455)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytTotalRecovered2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toRightOf="@+id/lytTotalActiveCases"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/total_recovered_cases"
+                        android:textColor="@color/color_recovered_cases"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalRecoveredCases2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_recovered_cases"
+                        android:textStyle="normal"
+                        tools:text="1234" />
+
+                    <TextView
+                        android:id="@+id/tvRecoveredCasesToday2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_recovered_cases"
+                        android:textStyle="italic"
+                        tools:text="(+23)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytTotalDeaths2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/total_death_cases"
+                        android:textColor="@color/color_deaths_cases"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalDeceasedCases2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_deaths_cases"
+                        android:textStyle="normal"
+                        tools:text="145" />
+
+                    <TextView
+                        android:id="@+id/tvDeceasedCasesToday2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_deaths_cases"
+                        android:textStyle="italic"
+                        tools:text="(+4)" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

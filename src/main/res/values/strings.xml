@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Corona Count</string>
+    <string name="total_active_cases">CONFIRMED</string>
+    <string name="total_recovered_cases">RECOVERED</string>
+    <string name="total_death_cases">DECEASED</string>
+    <string name="network_error">Network Error</string>
+    <string name="server_error">Server Error</string>
+    <string name="world_data">World Corona Count</string>
+    <string name="india_data">India Corona Count</string>
+</resources>
