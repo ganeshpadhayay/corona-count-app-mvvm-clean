@@ -27,6 +27,10 @@ class Navigator
         context.startActivity(HomeActivity.callingIntent(context))
 
     fun showSomeOtherActivity(activity: FragmentActivity, data: Bundle) {}
+
+    fun printMessage(){
+
+    }
 }
 
 
