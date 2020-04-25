@@ -29,7 +29,7 @@ class Navigator
     fun showSomeOtherActivity(activity: FragmentActivity, data: Bundle) {}
 
     fun printMessage(){
-
+        //new toast
     }
 }
 
