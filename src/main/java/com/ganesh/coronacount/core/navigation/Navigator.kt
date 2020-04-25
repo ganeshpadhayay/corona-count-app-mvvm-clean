@@ -2,6 +2,7 @@ package com.ganesh.coronacount.core.navigation
 
 import android.content.Context
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import com.ganesh.coronacount.features.home.HomeActivity
 import com.ganesh.coronacount.features.login.Authenticator
@@ -29,7 +30,7 @@ class Navigator
     fun showSomeOtherActivity(activity: FragmentActivity, data: Bundle) {}
 
     fun printMessage(){
-        //new toast
+        //Toast//
     }
 }
 
